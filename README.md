@@ -1,2 +1,2 @@
-# harmonize
+# Harmonize
 Synchronize music across devices
