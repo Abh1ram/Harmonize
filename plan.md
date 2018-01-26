@@ -3,8 +3,8 @@ Music_Sync
 1. Player
 - start : args - filename, time(opt)
 - playAt  : args - time(opt)
-- pause : 
-- getTime : 
+- pause :
+- getTime :
 
 
 2. Client
@@ -30,8 +30,12 @@ Music_Sync
     - create the player
     - player.play
     - create the connectivity object and start listening
-    - 
-    - 
+    -
+    -
+
+
+4. CommandCentral
+List<std::thread>
 
 
 
@@ -61,7 +65,7 @@ public:
 - recieve, readline
 - ServerNode connect
 - scan
-- ClientProtocol listen 
+- ClientProtocol listen
 
 
 
@@ -70,4 +74,4 @@ public:
 -- Server -> ClientNode.synchronize -> connectivity.sendmessage
 -- Client -> ServerNode.
 
--- 
+--
