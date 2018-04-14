@@ -25,7 +25,7 @@ TCPConnectivity::TCPConnectivity(std::string &ip,
   }
 }
 
-// This is the constructor for spawning a new connection to 
+// This is the constructor for spawning a new connection to
 // client
 harmonize::TCPConnectivity::TCPConnectivity(struct csock_connection conn)
     : remote_conn_(conn) { }
@@ -49,7 +49,7 @@ ClientProtocol harmonize::TCPConnectivity::Listen() {
 
   unique_ptr<TCPConnectivity> client_conn(new TCPConnectivity(new_conn));
   // Now the new_client owns the connection
-  ClientProtocol new_client(std::move(client_conn));
+  ClientProtocol new_client(client_conn);
   return new_client;
 }
 
